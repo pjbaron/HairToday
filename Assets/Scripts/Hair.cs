@@ -43,7 +43,7 @@ public class Hair : MonoBehaviour
     void MoveToSurface(GameObject strand)
     {
         float theta = 2.0f * Mathf.PI * Random.value;
-        float y = Random.value;
+        float y = Random.value * 0.75f + 0.25f;
         float x = Mathf.Sqrt(1f - y * y) * Mathf.Cos(theta);
         float z = Mathf.Sqrt(1f - y * y) * Mathf.Sin(theta);
         strand.transform.position = new Vector3(x * head.transform.localScale.x * 0.5f, y * head.transform.localScale.y * 0.5f, z * head.transform.localScale.z * 0.5f);

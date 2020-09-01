@@ -45,7 +45,7 @@ public class HairNode : MonoBehaviour
         scale.y = diff.magnitude * 0.5f;
         cylinder.localScale = scale;
         gameObject.transform.LookAt(point);
-        Debug.DrawLine(transform.position, point, Color.white, 0.5f, true);
+        //Debug.DrawLine(transform.position, point, Color.white, 0.5f, true);
     }
 
     public void SetHead(GameObject _head)
